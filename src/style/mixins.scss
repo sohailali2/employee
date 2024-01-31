@@ -1,0 +1,62 @@
+@mixin flexColumnCenter {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+  
+  @mixin flexRowCenter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  @mixin aTag{
+      font-family: $PoppinsFont;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+  }
+  
+  @mixin ulTag {
+      font-family: $PoppinsFont;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    
+  }
+  
+  @mixin NavlistHover {
+      text-decoration: none;
+      font-size: 1rem;
+      list-style: none;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+  
+          &.active {
+              color: $blueColor;
+              font-weight: 800;
+          }
+  
+          &:hover {
+              color: $blueColor;
+          }
+  
+          a {
+              font-family: $PoppinsFont;
+              text-decoration: none;
+              color: $blackColor;
+              cursor: pointer;
+              transition: 0.5s ease-in-out;
+            
+              &.active {
+                  color: $blueColor;
+                  font-weight: 800;
+              }
+  
+              &:hover {
+                  color: $blueColor;
+              }
+          }
+  }
